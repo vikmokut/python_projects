@@ -171,6 +171,6 @@ for letter in user_name:
             choices.append(word)
     # print(choices)
     try:
-        print(f'{letter.upper()} - {random.choice(choices)}')
+        print(f'{letter.upper()} - {random.choice(choices).title()}')
     except IndexError:
         print(f'{letter} - not a letter')
